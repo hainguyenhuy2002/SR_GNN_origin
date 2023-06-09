@@ -48,7 +48,7 @@ def main():
     elif opt.dataset == 'yoochoose1_64' or opt.dataset == 'yoochoose1_4':
         n_node = 37484
     else:
-        n_node = 16
+        n_node = 17
 
     model = trans_to_cuda(SessionGraph(opt, n_node))
     start = time.time()

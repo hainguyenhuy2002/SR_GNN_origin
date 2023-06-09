@@ -120,7 +120,7 @@ def forward(model, i, data):
     return targets, model.compute_scores(seq_hidden, mask)
 
 
-def train_test(model, train_data, test_data):
+def train_test(model, train_data, test_data,epoch, PATH):
     model.scheduler.step()
     print('start training: ', datetime.datetime.now())
     model.train()
@@ -154,4 +154,13 @@ def train_test(model, train_data, test_data):
                 mrr.append(1 / (np.where(score == target - 1)[0][0] + 1))
     hit = np.mean(hit) * 100
     mrr = np.mean(mrr) * 100
+
+    print("saving model")
+
+    torch.save({
+            'epoch': epoch,
+            'model_state_dict': model.state_dict(),
+            'loss': total_loss,
+            }, PATH)
+
     return hit, mrr

@@ -49,6 +49,10 @@ def main():
         n_node = 37484
     elif opt.dataset =='/kaggle/input/userbrowsing234':
         n_node = 12012
+        
+    elif opt.dataset =='/kaggle/input/userbrowsing234nocut':
+        n_node = 13432
+    
     #elif opt.dataset =='/kaggle/input/withoutactionnot12':
         #n_node = 84509
     #elif opt.dataset =='/kaggle/input/largerthan7':

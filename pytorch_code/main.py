@@ -47,12 +47,14 @@ def main():
         n_node = 43098
     elif opt.dataset == 'yoochoose1_64' or opt.dataset == 'yoochoose1_4':
         n_node = 37484
-    elif opt.dataset =='/kaggle/input/withoutactionnot12':
-        n_node = 84509
-    elif opt.dataset =='/kaggle/input/largerthan7':
-        n_node = 43610
-    elif opt.dataset =='/kaggle/input/withoumappingaction':
-        n_node = 110635
+    elif opt.dataset =='/kaggle/input/userbrowsing234':
+        n_node = 12012
+    #elif opt.dataset =='/kaggle/input/withoutactionnot12':
+        #n_node = 84509
+    #elif opt.dataset =='/kaggle/input/largerthan7':
+        #n_node = 43610
+    #elif opt.dataset =='/kaggle/input/withoumappingaction':
+        #n_node = 110635
 
     model = trans_to_cuda(SessionGraph(opt, n_node))
     start = time.time()

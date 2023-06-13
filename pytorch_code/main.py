@@ -47,7 +47,7 @@ def main():
         n_node = 43098
     elif opt.dataset == 'yoochoose1_64' or opt.dataset == 'yoochoose1_4':
         n_node = 37484
-    elif opt.dataset =='not1_2'
+    elif opt.dataset =='withoutactionnot12'
         n_node = 84509
     else:
         n_node = 110635

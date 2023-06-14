@@ -53,7 +53,10 @@ def main():
     elif opt.dataset =='/kaggle/input/userbrowsing234nocut':
         n_node = 13432
     
-    elif opt.dataset =='/kaggle/input/broswer235678':
+    elif opt.dataset =='/kaggle/input/browser235678':
+        n_node = 12012
+        
+    elif opt.dataset =='/kaggle/input/browser234567':
         n_node = 12012
         
         

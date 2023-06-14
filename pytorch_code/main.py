@@ -58,8 +58,8 @@ def main():
         
     elif opt.dataset =='/kaggle/input/browser234567':
         n_node = 12012
-        
-        
+    else:
+        n_node = 12012     
     
     #elif opt.dataset =='/kaggle/input/withoutactionnot12':
         #n_node = 84509
